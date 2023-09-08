@@ -1,4 +1,4 @@
-import 'ItemlistContainer.css';
+import './ItemlistContainer.css';
 
 const ItemListContainer = (greeting) => {
     return (<>
