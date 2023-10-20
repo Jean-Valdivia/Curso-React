@@ -20,8 +20,8 @@ const Navbar = () => {
         <Button sx={{color: 'black'}} component={Link} to={`/products`}>
           Productos
         </Button>
-        <Button sx={{color: 'black'}}>
-          <CartWidget/>
+        <Button sx={{color: 'black'}} component={Link} to={`/cart`}>
+          <CartWidget />
         </Button>
       </Toolbar>
     </AppBar>);

@@ -1,7 +1,19 @@
-import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Typography } from '@mui/material';
+import { useCartContext } from '../../context/CartContext';
 
 const CartWidget = () => {
-    return (<> <ShoppingCartTwoToneIcon sx={{ color: "black" }} /> <span style={{ color: "black" }}>(19)</span> </>);
+    const { cart } = useCartContext();
+
+    console.log(cart)
+    return (
+        <div style={{ display: "flex", alignItems: "center" }}>
+            <ShoppingCartIcon />
+            <Typography>{cart.items.length}</Typography>
+        </div>
+
+
+    );
 }
 
 export default CartWidget;

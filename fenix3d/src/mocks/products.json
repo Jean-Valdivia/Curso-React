@@ -145,7 +145,7 @@
         "title": "Cortante de galletitas Oso Yogui",
         "price": 400,
         "category": "Home&Deco",
-        "itHasDues": false,
+        "itHasDues": true,
         "isAnOffer": true,
         "stock": 11
     }
